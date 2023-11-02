@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="53dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="149dp"
+        app:cardBackgroundColor="@color/cardview_shadow_start_color"
+        app:cardElevation="0dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawableTop="@drawable/start" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="28dp"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:text="@string/hello"
+        android:textColor="@color/white"
+        android:textSize="42sp"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/introduce"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="9dp"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:text="@string/introduce"
+        android:textColor="@color/text_grey"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/Name_Field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="15dp"
+        android:drawableStart="@drawable/icon"
+        android:hint="@string/user_name"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:textColorHint="@color/text_grey"
+        android:textSize="20sp"
+        android:textStyle="normal" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/username_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="15dp"
+        android:drawableStart="@drawable/icon"
+        android:hint="@string/username_field"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:textColorHint="@color/text_grey"
+        android:textSize="20sp"
+        android:textStyle="normal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="23dp"
+        android:orientation="horizontal"
+        tools:context=".MainActivity">
+
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/back"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="23dp"
+            android:background="@drawable/backbutton"
+            android:clickable="true"
+            android:contentDescription="@string/back_arrow"
+            android:focusable="true"
+            android:gravity="center_horizontal"
+            android:src="@drawable/arrow" />
+
+        <FrameLayout
+            android:layout_width="245dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="23dp"
+            android:background="@drawable/nextbutton"
+            android:clickable="true"
+            android:focusable="true">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="65dp"
+
+                android:background="@null"
+                android:contentDescription="@string/next_arrow"
+                android:drawableEnd="@drawable/nextarrow"
+                android:gravity="center"
+                android:text="@string/next"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="normal"
+
+                ></androidx.appcompat.widget.AppCompatButton>
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
+

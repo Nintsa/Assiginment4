@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Assiginment4</string>
+    <string name="user_name">Your Full Name</string>
+    <string name="username_field">Username</string>
+    <string name="hello">Hello!</string>
+    <string name="introduce">Let\'s Introduce</string>
+    <string name="back" />
+    <string name="next">Next</string>
+    <string name="back_arrow">Back Arrow</string>
+    <string name="next_arrow">Next Arrow</string>
+</resources>
